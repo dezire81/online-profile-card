@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by dezire81 (http://jsbin.com/kefudil/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="hu">
+<head>
+<meta name="description" content="Online-profile-card">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width inital-scale=1">
+  <title>Dezső Mutz -  profile card</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style id="jsbin-css">
+.profile-card  {
+  background-color: hsla(60, 100%, 50%, .4);
+}
+
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* Pozícionálás */
+
+.profile-card {
+  width: 480px;
+  max-width: calc(100vw - 10px);
+}
+
+body {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+}
+
+.head, .links {
+  text-align: center;
+}
+
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile-image {
+  margin-top: -60px;
+}
+
+/* Contact links */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+.head, .about {
+  margin-bottom: 10%;
+}
+
+.content {
+  padding: 5% 10%;
+}
+
+body {
+  background: url('https://i.imgur.com/N0o4X3z.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.profile-card {
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+
+img {
+  padding: 1px;
+  background-color: #666;
+  transition: all 0.5s ease-in-out;
+   filter: grayscale(50%);
+}
+
+.content {
+  color: black;
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+img:hover {
+  transform: scale(1.1);
+   filter: grayscale(20%);
+}
+
+i {
+  color:white;
+}
+
+h1 {
+  font-variant: small-caps;
+   font-size: x-large;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+h2 {
+   font-size: large;
+   font-family: Georgia, "Times New Roman", Serif;
+}
+
+.city {
+  font-size: large;
+}
+
+@media(max-width:768px){
+h1, h2,span, p.city, p.about {
+font-size: x-large;
+}
+}
+</style>
+</head>
+<body>
+      <div class="profile-card">
+      <div class="head">
+        <div class="profile-image">
+          <img src="https://i.imgur.com/lOaseL5.jpg" alt="profilkép">
+        </div>
+        <div class="name-headline">
+          <h1>Dezső Mutz</h1>
+          <h2>web-programming student</h2>
+          <span>from:</span>
+          <p class="city"><i class="fa fa-map-marker"></i>Budapest, HU</p>
+        </div>
+      </div>
+    <div class="content">
+      <p class="about">As an educated young person in health and social affairs, a marketable developmental opportunity, from the current hobby level programming, with all its areas of knowledge gained over time, I want to be among the best.</p>
+    <section class="links">
+      <h2>Contect me via</h2>
+      <ul>
+         <li><a href="https://www.facebook.com/dezso.mutz" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+		<li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li> 
+        <li><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+      </ul>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
